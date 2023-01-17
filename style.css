@@ -1,0 +1,136 @@
+:root {
+  --clr-primary-soft-blue: hsl(215, 51%, 70%);
+  --clr-accent: hsl(178, 100%, 50%);
+
+  --clr-neutral-900: hsl(217, 54%, 11%);
+  --clr-neutral-800: hsl(216, 50%, 16%);
+  --clr-neutral-700: hsl(215, 32%, 27%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-primary: "Outfit", sans-serif;
+
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-400: 1.125rem;
+  --fs-600: 1.5rem;
+}
+
+/* Utility classes */
+
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+
+.text-neutral-800 {
+  color: var(--clr-neutral-800);
+}
+
+.text-neutral-700 {
+  color: var(--clr-neutral-700);
+}
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.text-accent {
+  color: var(--clr-accent);
+}
+
+.text-primary-soft-blue {
+  color: var(--clr-primary-soft-blue);
+}
+
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+
+.bg-neutral-800 {
+  background-color: var(--clr-neutral-800);
+}
+
+.fw-thin {
+  font-weight: var(--fw-thin);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-regular {
+  font-size: var(--fs-400);
+}
+
+.fs-heading {
+  font-size: var(--fs-600);
+}
+
+/* Styles */
+
+.nft-info {
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  --max-width: calc(375px - (2 * 1rem));
+  margin-inline: auto;
+
+  width: min(100%, var(--max-width));
+  padding: 1.5rem;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  margin-top: 10rem;
+}
+
+.listing-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+}
+
+.offer-time {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.divider {
+  border-bottom: 1px solid var(--clr-neutral-700);
+}
+
+img {
+  border-radius: 1rem;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.creator-avatar {
+  width: 2.5rem;
+  border: white 1px solid;
+  border-radius: 100vmax;
+}
+
+.creator-info {
+  vertical-align: middle;
+}
